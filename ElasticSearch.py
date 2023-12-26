@@ -11,7 +11,7 @@ class SearchEngine:
         self.index_name = 'my_index'
         self.es = Elasticsearch(
             ["https://localhost:9200"],
-            basic_auth=("elastic", "NxdaBhjiQg7NrB*DmgT4"),
+            basic_auth=("username", "senha"),
             verify_certs=False
         )
         if not self.es.indices.exists(index=self.index_name, ):
